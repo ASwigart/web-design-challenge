@@ -5,15 +5,24 @@
 }
 
 .navbar {
-    background-color: rgb(000, 230,230);
+    background-color: aqua;
 }
 
 
-.containter {
+.container {
     background-color: aqua;
     padding: 20px;
 }
 
+.table table-bordered, tbody th td {
+    border: 1px solid;
+    width: 85%;
+    text-align: center;
+    padding: 15px;
+    
+}
+/* .table tr-nth-child(even) {
+    background-color: #f2f2f2:} */
 
 .h1 {
     margin-bottom:15px;

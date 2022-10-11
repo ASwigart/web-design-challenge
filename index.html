@@ -17,36 +17,39 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                  Plots
-                </a>
+                <button class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                  Plots</button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="assets/images/Fig1.png">Temperature</a>
+                    <a class="dropdown-item" href="assets/images/Fig2.png">Humidity</a>
+                    <a class="dropdown-item" href="assets/images/Fig3.png">Cloudiness</a>
+                    <a class="dropdown-item" href="assets/images/Fig4.png">Windspeed</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="resources/data-page.html">Data Table</a>
+                  </div>
             <li class="nav-item active">
               <a class="nav-link" href="comparison-page.html">Comparison <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="data-page.html">Data</a>
+              <a class="nav-link" href="resources/data-page.html">Data</a>
             </li>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="comparison-page.html">Go to Comparison</a>
-                <a class="dropdown-item" href="visualization-page.html">Go to Visualizations</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="data.html">Data Table</a>
               </div>
             </li>
           </ul>
         </div>
       </nav>
+
+      
 <!-- layout of columns -->
 <div class = "container">
     <div class="row"> 
         <div class="col-lg-8 bg-info"> 
             <div class="card" style="width: lg;">
                 <a href="Starter_Code/Resources/assets/images/Fig1.png"></a>
-                <img src="assets/images/Fig1.png" class="card" alt="city latitute v max temperature" ="right"/>
+                <img src="assets/images/Fig1.png" class="card" alt="city latitute v max temperature" margin="right"/>
                 <BRCLEAR="left"/>
                 <div class ="card body">
                     <h4 class="card-title">Summary: Latitude vs. X</h4>
@@ -55,21 +58,34 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 bg-info">
-            <div class="card" style="width: 18rem;">
+        <div class="col-lg-4 bg-info">
+            <div class="card" style="width: med;">
                 <h4 class="card-title bg-info">Visualizations</h4>
                 <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <img src="assets/images/Fig1.png" class="card" alt="city latitute vs. max temperature"></div>
+                    <div class="col">
+                      <img src="assets/images/Fig2.png"class="card" alt="city latitute vs. humidity">></div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                      <img src="assets/images/Fig3.png" class="card" alt="city latitute vs. Cloudiness"></div>
+                    <div class="col">
+                      <img src="assets/images/Fig4.png" class="card" alt="city latitute vs. Wind Speed"></div>
+                  </div>
+                </div>
+                <!-- <div class="container">
                     <div class="row">
                         <div class="col-sm">
                         <img src="assets/images/Fig1.png" class="card" alt="city latitute vs. max temperature"></div>
                         <div class="col-sm">
-                        <img src="assets/images/Fig1.png"></div>       
+                        <img src="assets/images/Fig2.png"></div>       
                         <div class="col-sm">
                         <img src="assets/images/Fig3.png" class="card" alt="city latitute vs. Cloudiness"></div>
                         <div class="col-sm">
                         <img src="assets/images/Fig4.png" class="card" alt="city latitute vs. Wind Speed"></div>
                     </div>
-                </div>
+                </div> -->
           </div>
         </div>
 
